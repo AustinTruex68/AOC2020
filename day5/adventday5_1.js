@@ -9,7 +9,6 @@ fs.readFile(filePath, {encoding: 'utf-8'}, (err, data) =>{
        let seat = seats[i]
        const rowCheck = seatCheck(seat, [0, 127], 0);
        const colCheck = seatLocCheck(seat, [0, 7], 7)
-       
        const sId = ((rowCheck * 8) + colCheck);
        if(sId > highest)
          highest = sId;
